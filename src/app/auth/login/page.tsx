@@ -131,14 +131,14 @@ export default function LoginPage() {
                 Email Address
               </label>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 flex items-center pointer-events-none">
+                <span className="absolute left-3.5 top-1/2 -translate-y-1/2 flex items-center pointer-events-none">
                   <Mail className="h-[16px] w-[16px] text-[#64748B]" />
                 </span>
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-[#1E293B] border border-[#334155] focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] rounded-[10px] py-3 pl-10 pr-4 text-white text-sm placeholder-[#64748B] outline-none transition-all"
+                  className="w-full bg-[#1E293B] border border-[#334155] focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] rounded-[10px] py-3 pl-11 pr-4 text-white text-sm placeholder-[#64748B] outline-none transition-all"
                   placeholder="name@example.com"
                   required
                 />
@@ -162,21 +162,21 @@ export default function LoginPage() {
                 </Link>
               </div>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 flex items-center pointer-events-none">
+                <span className="absolute left-3.5 top-1/2 -translate-y-1/2 flex items-center pointer-events-none">
                   <Lock className="h-[16px] w-[16px] text-[#64748B]" />
                 </span>
                 <input
                   type={showPassword ? 'text' : 'password'}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full bg-[#1E293B] border border-[#334155] focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] rounded-[10px] py-3 pl-10 pr-10 text-white text-sm placeholder-[#64748B] outline-none transition-all"
+                  className="w-full bg-[#1E293B] border border-[#334155] focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] rounded-[10px] py-3 pl-11 pr-11 text-white text-sm placeholder-[#64748B] outline-none transition-all"
                   placeholder="••••••••"
                   required
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center text-[#64748B] hover:text-slate-200 transition-colors cursor-pointer"
+                  className="absolute right-3.5 top-1/2 -translate-y-1/2 flex items-center text-[#64748B] hover:text-slate-200 transition-colors cursor-pointer"
                 >
                   {showPassword ? (
                     <EyeOff className="h-[16px] w-[16px]" />

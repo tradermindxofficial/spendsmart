@@ -166,14 +166,14 @@ export default function SignupPage() {
                 Full Name
               </label>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 flex items-center pointer-events-none">
+                <span className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center pointer-events-none">
                   <User className="h-[16px] w-[16px] text-[#64748B]" />
                 </span>
                 <input
                   type="text"
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
-                  className="w-full bg-[#1E293B] border border-[#334155] focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] rounded-[10px] py-3 pl-10 pr-4 text-white text-sm placeholder-[#64748B] outline-none transition-all"
+                  className="w-full bg-[#1E293B] border border-[#334155] focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] rounded-[10px] py-3 pl-12 pr-4 text-white text-sm placeholder-[#64748B] outline-none transition-all"
                   placeholder="John Doe"
                   required
                 />
@@ -186,14 +186,14 @@ export default function SignupPage() {
                 Email Address
               </label>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 flex items-center pointer-events-none">
+                <span className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center pointer-events-none">
                   <Mail className="h-[16px] w-[16px] text-[#64748B]" />
                 </span>
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-[#1E293B] border border-[#334155] focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] rounded-[10px] py-3 pl-10 pr-4 text-white text-sm placeholder-[#64748B] outline-none transition-all"
+                  className="w-full bg-[#1E293B] border border-[#334155] focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] rounded-[10px] py-3 pl-12 pr-4 text-white text-sm placeholder-[#64748B] outline-none transition-all"
                   placeholder="name@example.com"
                   required
                 />
@@ -206,14 +206,14 @@ export default function SignupPage() {
                 Password
               </label>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 flex items-center pointer-events-none">
+                <span className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center pointer-events-none">
                   <Lock className="h-[16px] w-[16px] text-[#64748B]" />
                 </span>
                 <input
                   type={showPassword ? 'text' : 'password'}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full bg-[#1E293B] border border-[#334155] focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] rounded-[10px] py-3 pl-10 pr-10 text-white text-sm placeholder-[#64748B] outline-none transition-all"
+                  className="w-full bg-[#1E293B] border border-[#334155] focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] rounded-[10px] py-3 pl-12 pr-10 text-white text-sm placeholder-[#64748B] outline-none transition-all"
                   placeholder="At least 6 characters"
                   required
                 />
@@ -254,14 +254,14 @@ export default function SignupPage() {
                 Confirm Password
               </label>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 flex items-center pointer-events-none">
+                <span className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center pointer-events-none">
                   <Lock className="h-[16px] w-[16px] text-[#64748B]" />
                 </span>
                 <input
                   type={showConfirmPassword ? 'text' : 'password'}
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
-                  className="w-full bg-[#1E293B] border border-[#334155] focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] rounded-[10px] py-3 pl-10 pr-10 text-white text-sm placeholder-[#64748B] outline-none transition-all"
+                  className="w-full bg-[#1E293B] border border-[#334155] focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] rounded-[10px] py-3 pl-12 pr-10 text-white text-sm placeholder-[#64748B] outline-none transition-all"
                   placeholder="Repeat your password"
                   required
                 />

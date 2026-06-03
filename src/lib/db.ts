@@ -44,15 +44,18 @@ const isSupabaseConfigured = !!(supabaseUrl && supabaseAnonKey && supabaseUrl !=
 // Helper to check if window is available (client-side)
 const isClient = typeof window !== 'undefined';
 
+// Initialize Supabase Client ONLY if configured
+export const supabaseClient = isSupabaseConfigured && supabaseUrl && supabaseAnonKey
+  ? createClient(supabaseUrl, supabaseAnonKey)
+  : null;
+
+// Database mode - default to demo, switch to supabase if configured
 export let dbMode: 'supabase' | 'demo' = isSupabaseConfigured ? 'supabase' : 'demo';
+
+// Initialize demo mode from localStorage if available (client-side only)
 if (isClient && localStorage.getItem('demo_mode') === 'true') {
   dbMode = 'demo';
 }
-
-// Initialize Supabase Client if configured
-export const supabaseClient = isSupabaseConfigured 
-  ? createClient(supabaseUrl, supabaseAnonKey) 
-  : null;
 
 // Initial Default Categories Data
 const DEFAULT_CATEGORIES: Category[] = [

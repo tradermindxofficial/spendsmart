@@ -101,13 +101,13 @@ export default function LoginPage() {
 
       {/* Right Panel - Login Form */}
       <div className="w-full md:w-1/2 flex items-center justify-center p-6 sm:p-12 bg-[#0F172A] relative overflow-hidden">
-        {/* Mobile top bar with logo */}
-        <div className="absolute top-6 left-6 flex md:hidden items-center gap-2">
-          <Wallet className="h-6 w-6 text-emerald-400" />
-          <span className="text-lg font-bold text-slate-100">SpendSmart</span>
-        </div>
         
-        <div className="w-full max-w-md space-y-8">
+        <div className="w-full max-w-md space-y-8 mt-12 md:mt-0">
+          {/* Mobile top bar with logo */}
+          <div className="flex md:hidden items-center gap-2 mb-6">
+            <Wallet className="h-6 w-6 text-emerald-400" />
+            <span className="text-lg font-bold text-slate-100">SpendSmart</span>
+          </div>
           {/* Welcome Header */}
           <div className="space-y-2">
             <h1 className="text-3xl font-bold text-white tracking-tight">
@@ -138,7 +138,7 @@ export default function LoginPage() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-[#1E293B] border border-[#334155] focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] rounded-[10px] py-3 pl-12 pr-4 text-white text-sm placeholder-[#64748B] outline-none transition-all"
+                  className="w-full bg-[#1E293B] border border-[#334155] focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] rounded-[10px] py-3 !pl-12 !pr-4 text-white text-sm placeholder-[#64748B] outline-none transition-all"
                   placeholder="name@example.com"
                   required
                 />
@@ -169,7 +169,7 @@ export default function LoginPage() {
                   type={showPassword ? 'text' : 'password'}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full bg-[#1E293B] border border-[#334155] focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] rounded-[10px] py-3 pl-12 pr-11 text-white text-sm placeholder-[#64748B] outline-none transition-all"
+                  className="w-full bg-[#1E293B] border border-[#334155] focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] rounded-[10px] py-3 !pl-12 !pr-11 text-white text-sm placeholder-[#64748B] outline-none transition-all"
                   placeholder="••••••••"
                   required
                 />
